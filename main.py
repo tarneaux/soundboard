@@ -11,6 +11,7 @@ class App:
         mixer.init()
         win = Gtk.Window()
         win.connect("destroy", Gtk.main_quit)
+        win.set_icon_from_file("icon.ico")
         self.grid = Gtk.Grid()
         win.add(self.grid)
         self.buildButtons()
